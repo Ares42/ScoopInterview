@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53AC40D5204D977C86F49C60 /* Pods_ScoopInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC756C80D2F76F3606ED065 /* Pods_ScoopInterview.framework */; };
 		D5181F8B203FD94600E32E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5181F8A203FD94600E32E2E /* AppDelegate.swift */; };
 		D5181F8D203FD94600E32E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5181F8C203FD94600E32E2E /* ViewController.swift */; };
 		D5181F90203FD94600E32E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5181F8E203FD94600E32E2E /* Main.storyboard */; };
 		D5181F92203FD94600E32E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5181F91203FD94600E32E2E /* Assets.xcassets */; };
 		D5181F95203FD94600E32E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5181F93203FD94600E32E2E /* LaunchScreen.storyboard */; };
+		D5181F9F203FDFE100E32E2E /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5621A8BC1E38B8544A9F3A3F /* Pods-ScoopInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoopInterview.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScoopInterview/Pods-ScoopInterview.release.xcconfig"; sourceTree = "<group>"; };
+		BF54310A80D2037503C110C7 /* Pods-ScoopInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoopInterview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScoopInterview/Pods-ScoopInterview.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC756C80D2F76F3606ED065 /* Pods_ScoopInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoopInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5181F87203FD94600E32E2E /* ScoopInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoopInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5181F8A203FD94600E32E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5181F8C203FD94600E32E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D5181F91203FD94600E32E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5181F94203FD94600E32E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5181F96203FD94600E32E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC40D5204D977C86F49C60 /* Pods_ScoopInterview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66C6D7CE6EFFEE23713DA7C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF54310A80D2037503C110C7 /* Pods-ScoopInterview.debug.xcconfig */,
+				5621A8BC1E38B8544A9F3A3F /* Pods-ScoopInterview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5181F7E203FD94600E32E2E = {
 			isa = PBXGroup;
 			children = (
 				D5181F89203FD94600E32E2E /* ScoopInterview */,
 				D5181F88203FD94600E32E2E /* Products */,
+				66C6D7CE6EFFEE23713DA7C1 /* Pods */,
+				F867ACB75D3ABFE64DD0A601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				D5181F8A203FD94600E32E2E /* AppDelegate.swift */,
 				D5181F8C203FD94600E32E2E /* ViewController.swift */,
+				D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */,
 				D5181F8E203FD94600E32E2E /* Main.storyboard */,
 				D5181F91203FD94600E32E2E /* Assets.xcassets */,
 				D5181F93203FD94600E32E2E /* LaunchScreen.storyboard */,
 				D5181F96203FD94600E32E2E /* Info.plist */,
 			);
 			path = ScoopInterview;
+			sourceTree = "<group>";
+		};
+		F867ACB75D3ABFE64DD0A601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC756C80D2F76F3606ED065 /* Pods_ScoopInterview.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5181F99203FD94600E32E2E /* Build configuration list for PBXNativeTarget "ScoopInterview" */;
 			buildPhases = (
+				E32ABD5E2E4DE9AD81858484 /* [CP] Check Pods Manifest.lock */,
 				D5181F83203FD94600E32E2E /* Sources */,
 				D5181F84203FD94600E32E2E /* Frameworks */,
 				D5181F85203FD94600E32E2E /* Resources */,
+				956EF229C628BD2961B2404C /* [CP] Embed Pods Frameworks */,
+				97EB5AB7AEB33C4CC67C84B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		956EF229C628BD2961B2404C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScoopInterview/Pods-ScoopInterview-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoopInterview/Pods-ScoopInterview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97EB5AB7AEB33C4CC67C84B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoopInterview/Pods-ScoopInterview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32ABD5E2E4DE9AD81858484 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoopInterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5181F83203FD94600E32E2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +224,7 @@
 			files = (
 				D5181F8D203FD94600E32E2E /* ViewController.swift in Sources */,
 				D5181F8B203FD94600E32E2E /* AppDelegate.swift in Sources */,
+				D5181F9F203FDFE100E32E2E /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,7 @@
 		};
 		D5181F9A203FD94600E32E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF54310A80D2037503C110C7 /* Pods-ScoopInterview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		D5181F9B203FD94600E32E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5621A8BC1E38B8544A9F3A3F /* Pods-ScoopInterview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
