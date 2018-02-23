@@ -13,7 +13,7 @@
 		D5181F90203FD94600E32E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5181F8E203FD94600E32E2E /* Main.storyboard */; };
 		D5181F92203FD94600E32E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5181F91203FD94600E32E2E /* Assets.xcassets */; };
 		D5181F95203FD94600E32E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5181F93203FD94600E32E2E /* LaunchScreen.storyboard */; };
-		D5181F9F203FDFE100E32E2E /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */; };
+		D5181F9F203FDFE100E32E2E /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5181F9E203FDFE100E32E2E /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		D5181F91203FD94600E32E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5181F94203FD94600E32E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5181F96203FD94600E32E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		D5181F9E203FDFE100E32E2E /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			children = (
 				D5181F8A203FD94600E32E2E /* AppDelegate.swift */,
 				D5181F8C203FD94600E32E2E /* ViewController.swift */,
-				D5181F9E203FDFE100E32E2E /* NetworkHandler.swift */,
+				D5181F9E203FDFE100E32E2E /* NetworkHelper.swift */,
 				D5181F8E203FD94600E32E2E /* Main.storyboard */,
 				D5181F91203FD94600E32E2E /* Assets.xcassets */,
 				D5181F93203FD94600E32E2E /* LaunchScreen.storyboard */,
@@ -224,7 +224,7 @@
 			files = (
 				D5181F8D203FD94600E32E2E /* ViewController.swift in Sources */,
 				D5181F8B203FD94600E32E2E /* AppDelegate.swift in Sources */,
-				D5181F9F203FDFE100E32E2E /* NetworkHandler.swift in Sources */,
+				D5181F9F203FDFE100E32E2E /* NetworkHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

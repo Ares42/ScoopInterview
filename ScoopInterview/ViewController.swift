@@ -12,27 +12,32 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
+    //MARK: IBOutlets
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        setupViews()
+        setupNetwork()
+    }
+    
+    //MARK: Setup Functions
+    func setupViews() {
         label.text = ""
         self.activityIndicator.startAnimating()
-        
-        Alamofire.request("https://api.takescoop.com/system/info").responseJSON { (data) -> Void in
-            let json = JSON(data.result.value)
-            let resData = Response.init(json: json)
-            
+    }
+    
+    func setupNetwork() {
+        NetworkHelper.sharedInstance.getBoolFromServer(completion: { response in
             DispatchQueue.main.async(execute: {
                 self.activityIndicator.isHidden = true
-                self.label.text = "\(resData.flag)"
+                self.label.text = "\(response.flag)"
             })
-        }
+        })
     }
     
 }
